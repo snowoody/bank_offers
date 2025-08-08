@@ -1,0 +1,1 @@
+javascript: (async () => { var offerLinks = Array.from(document.getElementsByClassName("add-deal load-available-deal")); for (let i = 0; i < offerLinks.length; i++) { console.log("Clicking offer link"); offerLinks[i].click(); await new Promise(r => setTimeout(r, Math.random() * 1500 + 1000)); } })();
