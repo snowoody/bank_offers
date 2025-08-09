@@ -1,0 +1,1 @@
+javascript: (async () => { var offerButtons = Array.from(document.querySelectorAll("app-mo-offer-tile button.bg-transparent.border-0.ng-star-inserted")); for (let i = 0; i < offerButtons.length; i++) { console.log("Clicking offer button"); offerButtons[i].click(); await new Promise(r => setTimeout(r, Math.random() * 1500 + 1000)); } })();
