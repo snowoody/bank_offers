@@ -1,0 +1,1 @@
+javascript: (async () => { var offerButtons = document.querySelectorAll('div.cdlx-rs-offer-status span.unActiveOffer'); for (let i = 0; i < offerButtons.length; i++) { console.log("Clicking offer button"); offerButtons[i].click(); await new Promise(r => setTimeout(r, 2000)); } })();
