@@ -1,1 +1,4 @@
-javascript: (async () => { var offerButtons = document.querySelectorAll('div.cdlx-rs-offer-status span.unActiveOffer'); for (let i = 0; i < offerButtons.length; i++) { console.log("Clicking offer button"); offerButtons[i].click(); await new Promise(r => setTimeout(r, 2000)); } })();
+// outdated
+// javascript: (async () => { var offerButtons = document.querySelectorAll('div.cdlx-rs-offer-status span.unActiveOffer'); for (let i = 0; i < offerButtons.length; i++) { console.log("Clicking offer button"); offerButtons[i].click(); await new Promise(r => setTimeout(r, 2000)); } })();
+// Added on 10/2/2025
+javascript: (async () => { var cards = document.querySelectorAll('button.vicinityCard__center-rail'); for (let i = 0; i < cards.length; i++) { console.log("Clicking card"); cards[i].click(); await new Promise(r => setTimeout(r, 1000)); var activateBtn = document.querySelector('button#activate-offer'); if (activateBtn && activateBtn.textContent.includes('Activate')) { console.log("Clicking activate button"); activateBtn.click(); await new Promise(r => setTimeout(r, 2000)); } } })();
